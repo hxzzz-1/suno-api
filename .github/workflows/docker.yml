@@ -28,3 +28,5 @@ jobs:
         context: .
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/your-repo-name:latest
+        build-args: |
+          SUNO_COOKIE=${{ secrets.SUNO_COOKIE }}
